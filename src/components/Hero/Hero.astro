@@ -1,0 +1,48 @@
+---
+import CallToAction from "./CallToAction.astro";
+---
+
+<section class="hero">
+  <div class="container container">
+    <h5 class="prefix-text text">
+      <span class="span-text">Hello,</span> My Name is
+    </h5>
+    <h1 class="main-text text">Sushant Ray<span class="span-text">.</span></h1>
+    <h4 class="bottom-text text-light text">
+      I am a high-school programmer based in Nepal. I like to build stuff on the
+      web! Currently trying to be a 10x backend engineer... Feel free to break
+      this site!
+    </h4>
+    <CallToAction />
+  </div>
+</section>
+
+<style>
+  .span-text {
+    color: var(--color-primary);
+  }
+  .bottom-text {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 45px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 175px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hero {
+      height: 68vh;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .hero {
+      height: 100vh;
+    }
+  }
+</style>

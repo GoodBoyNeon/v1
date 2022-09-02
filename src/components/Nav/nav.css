@@ -1,0 +1,36 @@
+.navdialog {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  padding: 25px 5px;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 48px;
+  backdrop-filter: blur(15px);
+  margin-left: 10px;
+  top: 25vh;
+  
+}
+.icon {
+  background: transparent;
+  padding: 14.4px;
+  border-radius: 50%;
+  color: var(--color-light);
+}
+.icon:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.icon.active {
+  background: var(--color-background);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 600px) {
+  .navdialog {
+    background: red;
+    display: none;
+  }
+}

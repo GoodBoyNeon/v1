@@ -1,0 +1,48 @@
+---
+import Header from "../components/Header/Header.astro";
+import Nav from "../components/Nav/Nav.jsx";
+import Socials from "../components/Socials/Socials.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title?: string;
+}
+const { title = "GoodBoyNeon" } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- MetaData -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+
+    <title>{title}</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/c7aa946b7a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <Header />
+    <Nav client:load />
+    <Socials />
+    <slot />
+  </body>
+</html>
