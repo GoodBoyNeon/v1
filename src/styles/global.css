@@ -90,6 +90,7 @@ a:hover {
   padding: 12px 19.2px;
   border-radius: 0.4rem;
   cursor: pointer;
+  background: transparent;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
 }
@@ -106,7 +107,7 @@ a:hover {
   color: var(--color-background);
 }
 .btn:hover {
-  background: var(--color-white);
+  background: var(--color-primary);
   color: var(--color-background);
 }
 img {

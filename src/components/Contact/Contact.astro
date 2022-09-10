@@ -1,3 +1,61 @@
+---
+import ContactCont from '../Containers/ContactCont.astro';
+import ContactForm from './ContactForm.jsx';
+---
+
 <section id="contact">
+  <h5>Let's have a talk</h5>
   <h2>Contact Me</h2>
+  <div class="container">
+    <div class="social-cards">
+      <a href="mailto:goodboyneon03@gmail.com" target="_blank">
+        <ContactCont
+          id="email"
+          name="Email Me"
+          info="goodboyneon03@gmail.com"
+          icon="fa-regular fa-envelope"
+        />
+      </a>
+      <a href="https://discord.com/app" target="_blank">
+        <ContactCont
+          id="discord"
+          name="Discord"
+          info="GoodBoyNeon#2424"
+          icon="fa-brands fa-discord"
+        />
+      </a>
+      <a href="https://www.instagram.com/goodboyneon" target="_blank">
+        <ContactCont
+          id="instagram"
+          name="Instagram"
+          info="goodboyneon"
+          icon="fa-brands fa-instagram"
+        />
+      </a>
+    </div>
+    <div class="form">
+      <ContactForm />
+    </div>
+  </div>
 </section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .social-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  a {
+    color: var(--color-white);
+  }
+
+  .form {
+    margin-bottom: 90px;
+  }
+</style>

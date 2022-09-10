@@ -8,7 +8,7 @@ function Nav() {
     <nav className="navdialog">
       <a
         href="#"
-        class={activeNav === '#' ? 'active icon fa-solid fa-house' : 'icon fa-solid fa-house'}
+        className={activeNav === '#' ? 'active icon fa-solid fa-house' : 'icon fa-solid fa-house'}
         onClick={() => setActiveNav('#')}
       ></a>
       <a
@@ -23,7 +23,7 @@ function Nav() {
       <a
         href="#projects"
         className={`icon fa-solid fa-wrench ${activeNav === '#projects' ? 'active' : ''}`}
-        onClick={() => setActiveNav('#skills')}
+        onClick={() => setActiveNav('#projects')}
       ></a>
       <a
         href="#contact"        

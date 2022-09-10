@@ -1,0 +1,35 @@
+---
+const { icon, name, info } = Astro.props
+---
+
+<div class="box">
+  <div class='iconnn'>
+    <i class={icon}></i>
+  </div>
+  <h3>{name}</h3>
+  <h4 class="text-light">{info}</h4>
+</div>
+
+<style>
+  .iconnn {
+    font-size: 32px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    border-radius: 16px;
+    border: 3px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    width: 280px;
+    height: 190px;
+  }
+  .box:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    transition: var(--transition);
+  }
+</style>
