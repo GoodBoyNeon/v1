@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <div className="container contact__container">
       <h3 className="contact__title">Contact Form</h3>
-      <form className="contact__form" ref={form} onSubmit={sendEmail}>
+      <form className="contact__form">
         <input
           className="contact__input-field"
           type="text"
