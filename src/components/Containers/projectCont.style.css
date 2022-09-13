@@ -1,0 +1,17 @@
+.projectCont__container {
+  padding: 40px;
+  border: 3px solid var(--color-primary);
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  margin-top: 25px;
+}
+.projectCont__title {
+  color: var(--color-white);
+}
+.projectCont__btn {
+  font-size: 15.6px;
+}
+.projectCont__description {
+  color: var(--color-light);
+  padding: 10px 10px 10px 10px;
+}

@@ -1,0 +1,21 @@
+.contactCont__icon {
+  font-size: 32px;
+}
+.contactCont__box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  width: 280px;
+  height: 190px;
+}
+.contactCont__box:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  transition: var(--transition);
+}

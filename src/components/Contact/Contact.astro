@@ -1,4 +1,6 @@
 ---
+import './contact.style.css';
+
 import ContactCont from '../Containers/ContactCont.astro';
 import ContactForm from './ContactForm.jsx';
 ---
@@ -6,9 +8,9 @@ import ContactForm from './ContactForm.jsx';
 <section id="contact">
   <h5>Let's have a talk</h5>
   <h2>Contact Me</h2>
-  <div class="container">
-    <div class="social-cards">
-      <a href="mailto:goodboyneon03@gmail.com" target="_blank">
+  <div class="container contact__container">
+    <div class="contact__social-cards">
+      <a class="contact__social-box" href="mailto:goodboyneon03@gmail.com" target="_blank">
         <ContactCont
           id="email"
           name="Email Me"
@@ -16,7 +18,7 @@ import ContactForm from './ContactForm.jsx';
           icon="fa-regular fa-envelope"
         />
       </a>
-      <a href="https://discord.com/app" target="_blank">
+      <a class="contact__social-box" href="https://discord.com/app" target="_blank">
         <ContactCont
           id="discord"
           name="Discord"
@@ -24,7 +26,7 @@ import ContactForm from './ContactForm.jsx';
           icon="fa-brands fa-discord"
         />
       </a>
-      <a href="https://www.instagram.com/goodboyneon" target="_blank">
+      <a class="contact__social-box" href="https://www.instagram.com/goodboyneon" target="_blank">
         <ContactCont
           id="instagram"
           name="Instagram"
@@ -33,29 +35,8 @@ import ContactForm from './ContactForm.jsx';
         />
       </a>
     </div>
-    <div class="form">
+    <div class="contact__form">
       <ContactForm />
     </div>
   </div>
 </section>
-
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-  }
-  .social-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  a {
-    color: var(--color-white);
-  }
-
-  .form {
-    margin-bottom: 90px;
-  }
-</style>

@@ -1,0 +1,36 @@
+.footer {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer__footer .footer__link {
+  color: var(--color-light);
+}
+.footer__logoarea {
+  padding-bottom: 20px;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 auto 48px;
+  list-style-type: none;
+}
+.footer__source-code-area {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+.footer__source-code {
+  color: var(--color-light);
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.contact__social-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contact__social-box {
+  color: var(--color-white);
+}
+
+.contact__form {
+  margin-bottom: 90px;
+}

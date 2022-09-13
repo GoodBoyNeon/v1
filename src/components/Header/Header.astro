@@ -1,51 +1,18 @@
+---
+import './header.style.css';
+---
+
 <header class="header">
-  <div class="container">
-    <div class="logo">
-      <!-- <a href="/"><img src={logo} alt="Neon" /></a> -->
-      <a href="/" class="logotext">Neon</a>
+  <div class="container header__container">
+    <div class="header__logo">
+      <a href="/" class="header__logotext">Neon</a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list-item"><a class="header__list-link" href="#about">About</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#blogs">Blogs</a></li>
+        <li class="header__list-item"><a class="header__list-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<style>
-  .header {
-    height: 70px;
-    background: var(--color-background);
-  }
-
-  .header .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  .header img {
-    height: 86px;
-    vertical-align: middle;
-  }
-  .header nav ul {
-    display: flex;
-    list-style-type: none;
-  }
-  .header nav ul li {
-    padding: 0 10px;
-  }
-  .header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .logotext {
-    text-decoration: none;
-    color: var(--color-theme);
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-</style>

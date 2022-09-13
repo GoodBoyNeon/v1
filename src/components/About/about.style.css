@@ -1,0 +1,20 @@
+.about__title {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.about__desc {
+  margin-right: 100px;
+}
+.about__container {
+  display: flex;
+}
+.about__img {
+  border-radius: 32px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  width: 200px;
+}
+.about__skill {
+  font-family: Poppins;
+  font-weight: 500;
+}

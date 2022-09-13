@@ -1,12 +1,12 @@
-import './contactFormStyles.css';
+import './contactForm.style.css';
 
 const ContactForm = () => {
   return (
-    <div className="container contact__container">
-      <h3 className="contact__title">Contact Form</h3>
-      <form className="contact__form" ref={form} onSubmit={sendEmail}>
+    <div className="container contact-form__container">
+      <h3 className="contact-form__title">Contact Form</h3>
+      <form className="contact-form__form">
         <input
-          className="contact__input-field"
+          className="contact-form__input-field"
           type="text"
           name="user_name"
           id="name"
@@ -14,7 +14,7 @@ const ContactForm = () => {
           required
         />
         <input
-          className="contact__input-field"
+          className="contact-form__input-field"
           type="email"
           name="user_email"
           id="email"
@@ -22,13 +22,13 @@ const ContactForm = () => {
           required
         />
         <textarea
-          className="contact__input-field contact__textarea"
+          className="contact-form__input-field contact-form__textarea"
           name="message"
           id="message"
           placeholder="Message"
           required
         ></textarea>
-        <input className="btn contact__submit-btn" type="submit" value="Send" />
+        <input className="btn contact-form__submit-btn" type="submit" value="Send" />
       </form>
     </div>
   );

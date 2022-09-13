@@ -1,0 +1,27 @@
+.hero__span-text {
+  color: var(--color-primary);
+}
+.hero__bottom-text {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 45px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 175px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 68vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 100vh;
+  }
+}

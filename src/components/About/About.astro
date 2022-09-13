@@ -1,4 +1,6 @@
 ---
+import './about.style.css';
+
 import logo from '../../assets/images/neonlogo.svg';
 ---
 
@@ -6,10 +8,10 @@ import logo from '../../assets/images/neonlogo.svg';
   <h5>Who am I?</h5>
   <h2>About Me</h2>
 
-  <div class="container">
-    <div class="textbox">
-      <h3 class="title">I'm Sushant,</h3>
-      <p class="desc">
+  <div class="container about__container">
+    <div class="about__textbox">
+      <h3 class="about__title">I'm Sushant,</h3>
+      <p class="about__desc">
         and I like to contribute to the massive network of the internet! My passion is to build
         stuffs on the web, specially working on the server-side of different websites! <br /><br
         />I am currently in high-school, started programming at 13! I've got decent exprience with
@@ -19,43 +21,25 @@ import logo from '../../assets/images/neonlogo.svg';
         <br />
 
         <span class="fa-solid fa-caret-right"> </span>
-        <a href="https://www.javascript.com" target="_blank">Javascript</a>
+        <a class="about__skill" href="https://www.javascript.com" target="_blank">Javascript</a>
         <br />
         <span class="fa-solid fa-caret-right"> </span>
-        <a href="https://www.typescriptlang.org" target="_blank">Typescript</a>
+        <a class="about__skill" href="https://www.typescriptlang.org" target="_blank">Typescript</a
+        >
         <br />
         <span class="fa-solid fa-caret-right"> </span>
-        <a href="https://www.nodejs.org" target="_blank">Node.js</a>
+        <a class="about__skill" href="https://www.nodejs.org" target="_blank">Node.js</a>
         <br />
         <span class="fa-solid fa-caret-right"> </span>
-        <a href="https://www.reactjs.org" target="_blank">React</a>
+        <a class="about__skill" href="https://www.reactjs.org" target="_blank">React</a>
       </p>
     </div>
-    <div class="image">
-      <img class="img" src={logo} alt="" />
+    <div class="about__image">
+      <img class="img about__img" src={logo} alt="" />
     </div>
   </div>
 </section>
 
 <style>
-  .title {
-    font-weight: 600;
-    color: var(--color-primary);
-  }
-  .desc {
-    margin-right: 100px;
-  }
-  .container {
-    display: flex;
-  }
-  .img {
-    border-radius: 32px;
-    overflow: hidden;
-    aspect-ratio: 1/1;
-    width: 200px;
-  }
-  a {
-    font-family: Poppins;
-    font-weight: 500;
-  }
+
 </style>
