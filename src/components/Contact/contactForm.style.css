@@ -16,7 +16,7 @@
 }
 
 .contact-form__input-field {
-  width: 100%;
+  min-width: 100%;
   padding: 15px;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.1);
@@ -27,5 +27,5 @@
 }
 .contact-form__textarea {
   resize: none;
-  height: 130px;
+  min-height: 130px;
 }

@@ -1,10 +1,10 @@
 .header {
-  height: 70px;
+  min-height: 70px;
   background: var(--color-background);
 }
 
 .header__container {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -12,7 +12,7 @@
   border-radius: 32px;
   overflow: hidden;
   aspect-ratio: 1/1;
-  width: 200px;
+  max-width: 200px;
 }
 .about__skill {
   font-family: Poppins;

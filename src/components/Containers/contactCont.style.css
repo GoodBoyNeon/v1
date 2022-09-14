@@ -11,8 +11,8 @@
   border: 3px solid transparent;
   text-align: center;
   cursor: pointer;
-  width: 280px;
-  height: 190px;
+  min-width: 280px;
+  min-height: 190px;
 }
 .contactCont__box:hover {
   background: transparent;
