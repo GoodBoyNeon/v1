@@ -2,7 +2,6 @@
   --color-background: #1e293b;
   --color-white: #f2f4fb;
   --color-light: #94a3b8;
-  /* --color-white: #fff; */
   --color-primary: #44cbb1;
 
   --container-width-lg: 75%;
@@ -57,7 +56,8 @@ h1 {
 }
 section {
   margin-top: 8rem;
-  min-height: 80vh;
+  /* padding-top: 8rem; */
+  min-height: 100vh;
 }
 section > h2,
 section > h5 {

@@ -5,12 +5,12 @@ import ContactCont from '../Containers/ContactCont.astro';
 import ContactForm from './ContactForm.jsx';
 ---
 
-<section id="contact">
+<section id="contact" class="hidden">
   <h5>Let's have a talk</h5>
   <h2>Contact Me</h2>
   <div class="container contact__container">
     <div class="contact__social-cards">
-      <a class="contact__social-box" href="mailto:goodboyneon03@gmail.com" target="_blank">
+      <a class="contact__social-box hidden" href="mailto:goodboyneon03@gmail.com" target="_blank">
         <ContactCont
           id="email"
           name="Email Me"
@@ -18,7 +18,7 @@ import ContactForm from './ContactForm.jsx';
           icon="fa-regular fa-envelope"
         />
       </a>
-      <a class="contact__social-box" href="https://discord.com/app" target="_blank">
+      <a class="contact__social-box hidden" href="https://discord.com/app" target="_blank">
         <ContactCont
           id="discord"
           name="Discord"
@@ -26,7 +26,11 @@ import ContactForm from './ContactForm.jsx';
           icon="fa-brands fa-discord"
         />
       </a>
-      <a class="contact__social-box" href="https://www.instagram.com/goodboyneon" target="_blank">
+      <a
+        class="contact__social-box hidden"
+        href="https://www.instagram.com/goodboyneon"
+        target="_blank"
+      >
         <ContactCont
           id="instagram"
           name="Instagram"
@@ -35,7 +39,7 @@ import ContactForm from './ContactForm.jsx';
         />
       </a>
     </div>
-    <div class="contact__form">
+    <div class="contact__form hidden">
       <ContactForm />
     </div>
   </div>
