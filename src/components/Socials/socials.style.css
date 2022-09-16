@@ -8,6 +8,7 @@
   position: fixed;
   left: 0;
   padding-left: 30px;
+  z-index: 1;
 }
 .socials::after {
   content: '';
