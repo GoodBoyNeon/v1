@@ -12,6 +12,7 @@
   font-size: 15.6px;
 }
 .projectCont__description {
+  font-weight: 400;
   color: var(--color-light);
   padding: 10px 10px 10px 10px;
 }
