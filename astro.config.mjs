@@ -1,10 +1,8 @@
-import { defineConfig } from 'astro/config';
-
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: 'https://goodboyneon.github.io',
+  site: "https://goodboyneon.github.io",
 });
-
