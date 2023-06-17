@@ -5,6 +5,7 @@ import '../styles/portfolio.global.css';
 import Header from '../components/Header/Header.astro';
 import Nav from '../components/Nav/Nav.jsx';
 import Socials from '../components/Socials/Socials.astro';
+import favicon from '../assets/images/logo.svg'
 
 export interface Props {
   title?: string;
@@ -24,6 +25,10 @@ const { title = 'GoodBoyNeon' } = Astro.props as Props;
     <!-- Title -->
 
     <title>{title}</title>
+
+    <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href={favicon}>
+
 
     <!-- Google Fonts -->
 
